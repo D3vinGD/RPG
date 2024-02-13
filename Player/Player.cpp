@@ -7,8 +7,25 @@
 
 using namespace std;
 
+Player::Player(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed) {
+    experience = 0;
+    level = 1;
+}
+
 void Player::doAttack(Character *target) {
-    target->setHealth(target->getHealth() - (attack - target->getDefense()));
+    int trueDamage = getAttack() - target->getDefense();
+    target->takeDamage(trueDamage);
+}
+
+void Player::takeDamage(int damage) {
+    setHealth(health - damage);
+
+    if(health <= 0) {
+        cout<<"You have died"<<endl;
+    }
+    else {
+        cout<<"You have taken " << damage << " damage" << endl;
+    }
 }
 
 void Player::flee() {

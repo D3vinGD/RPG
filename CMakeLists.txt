@@ -7,4 +7,6 @@ add_executable(rpg main.cpp
         Character/Character.cpp
         Character/Character.h
         Player/Player.cpp
-        Player/Player.h)
+        Player/Player.h
+        Enemy/Enemy.cpp
+        Enemy/Enemy.h)

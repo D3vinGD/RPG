@@ -7,12 +7,15 @@
 
 #include "../Character/Character.h"
 
-class Player: Character {
+class Player: public Character {
 protected:
     int experience;
     int level;
 public:
+    Player(string, int, int, int, int);
     void doAttack(Character *target) override;
+    void takeDamage(int damage) override;
+
     void flee();
     void emote();
     void levelUp();

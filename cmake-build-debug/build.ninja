@@ -61,11 +61,17 @@ build CMakeFiles/rpg.dir/Character/Character.cpp.o: CXX_COMPILER__rpg_unscanned_
   OBJECT_DIR = CMakeFiles/rpg.dir
   OBJECT_FILE_DIR = CMakeFiles/rpg.dir/Character
 
-build CMakeFiles/rpg.dir/Player.cpp.o: CXX_COMPILER__rpg_unscanned_Debug /Users/vnavarro/ceti/POO-2O/rpg/Player.cpp || cmake_object_order_depends_target_rpg
-  DEP_FILE = CMakeFiles/rpg.dir/Player.cpp.o.d
+build CMakeFiles/rpg.dir/Player/Player.cpp.o: CXX_COMPILER__rpg_unscanned_Debug /Users/vnavarro/ceti/POO-2O/rpg/Player/Player.cpp || cmake_object_order_depends_target_rpg
+  DEP_FILE = CMakeFiles/rpg.dir/Player/Player.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/rpg.dir
-  OBJECT_FILE_DIR = CMakeFiles/rpg.dir
+  OBJECT_FILE_DIR = CMakeFiles/rpg.dir/Player
+
+build CMakeFiles/rpg.dir/Enemy/Enemy.cpp.o: CXX_COMPILER__rpg_unscanned_Debug /Users/vnavarro/ceti/POO-2O/rpg/Enemy/Enemy.cpp || cmake_object_order_depends_target_rpg
+  DEP_FILE = CMakeFiles/rpg.dir/Enemy/Enemy.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/rpg.dir
+  OBJECT_FILE_DIR = CMakeFiles/rpg.dir/Enemy
 
 
 # =============================================================================
@@ -75,7 +81,7 @@ build CMakeFiles/rpg.dir/Player.cpp.o: CXX_COMPILER__rpg_unscanned_Debug /Users/
 #############################################
 # Link the executable rpg
 
-build rpg: CXX_EXECUTABLE_LINKER__rpg_Debug CMakeFiles/rpg.dir/main.cpp.o CMakeFiles/rpg.dir/Character/Character.cpp.o CMakeFiles/rpg.dir/Player.cpp.o
+build rpg: CXX_EXECUTABLE_LINKER__rpg_Debug CMakeFiles/rpg.dir/main.cpp.o CMakeFiles/rpg.dir/Character/Character.cpp.o CMakeFiles/rpg.dir/Player/Player.cpp.o CMakeFiles/rpg.dir/Enemy/Enemy.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/rpg.dir
   POST_BUILD = :

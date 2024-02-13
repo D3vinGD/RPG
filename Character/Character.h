@@ -20,6 +20,7 @@ public:
     Character(string, int, int, int, int);
 
     virtual void doAttack(Character *target) = 0;
+    virtual void takeDamage(int damage) = 0;
 
     void setName(string);
     string getName();
