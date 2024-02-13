@@ -18,6 +18,9 @@ protected:
 
 public:
     Character(string, int, int, int, int);
+
+    virtual void doAttack(Character *target) = 0;
+
     void setName(string);
     string getName();
     void setHealth(int);
