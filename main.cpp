@@ -12,5 +12,8 @@ int main() {
 
     cout<< player->toString()<< endl;
     cout<< enemy->toString()<< endl;
+
+    delete player;
+    delete enemy;
     return 0;
 }
