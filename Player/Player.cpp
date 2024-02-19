@@ -1,19 +1,21 @@
 //
 // Created by Victor Navarro on 13/02/24.
 //
-
 #include "Player.h"
 #include <iostream>
+#include "../Utils.h"
 
 using namespace std;
+using namespace combat_utils;
 
-Player::Player(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed) {
+Player::Player(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed, true) {
     experience = 0;
     level = 1;
 }
 
 void Player::doAttack(Character *target) {
-    int trueDamage = getAttack() - target->getDefense();
+    int rolledAttack = getRolledAttack(getAttack());
+    int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
     target->takeDamage(trueDamage);
 }
 

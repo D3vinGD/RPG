@@ -1,17 +1,24 @@
 //
 // Created by Victor Navarro on 13/02/24.
 //
-
 #include "Enemy.h"
 #include <iostream>
 
+
 using namespace std;
 
-Enemy::Enemy(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed) {
+//TODO: Check the circular dependency
+int getRolledAttack(int attack) {
+    int lowerLimit = attack * .80;
+    return (rand() % (attack - lowerLimit)) + lowerLimit;
+}
+
+Enemy::Enemy(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed, false) {
 }
 
 void Enemy::doAttack(Character *target) {
-    int trueDamage = getAttack() - target->getDefense();
+    int rolledAttack = getRolledAttack(getAttack());
+    int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
     target->takeDamage(trueDamage);
 }
 
