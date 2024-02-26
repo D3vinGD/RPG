@@ -32,3 +32,17 @@ void Enemy::takeDamage(int damage) {
     }
 }
 
+Character* Enemy::getTarget(vector<Player *> teamMembers) {
+    // Obtiene el miembro del equipo con menos vida
+    int targetIndex = 0;
+    int lowestHealth = INT_MAX;
+    for(int i=0; i < teamMembers.size(); i++) {
+        if(teamMembers[i]->getHealth() < lowestHealth) {
+            lowestHealth = teamMembers[i]->getHealth();
+            targetIndex = i;
+        }
+    }
+
+    return teamMembers[targetIndex];
+}
+
