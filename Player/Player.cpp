@@ -82,32 +82,33 @@ Character* Player::getTarget(vector<Enemy *> enemies) {
     return enemies[targetIndex];
 }
 
-ActionResult Player::takeAction(vector<Enemy*>enemies) {
+Action Player::takeAction(vector<Enemy*>enemies) {
     int option = 0;
     cout<<"Choose an action"<<endl;
     cout<<"1. Attack"<<endl;
-    cout<<"2. Flee"<<endl;
+//    cout<<"2. Flee"<<endl;
     cin >> option;
     Character* target = nullptr;
-    bool fleed = false;
+
+    //Esta variable guarda
+    //1. Que voy a hacer?
+    //2. Con que velocidad/prioridad?
+    Action myAction;
+    //2.
+    myAction.speed = this->getSpeed();
+
     switch(option) {
         case 1:
             target = getTarget(enemies);
-            doAttack(target);
-            break;
-        case 2:
-            fleed = flee(enemies);
-            if(fleed) {
-                cout<<"You have fled"<<endl;
-            }
-            else {
-                cout<<"You couldn't flee"<<endl;
-            }
+            //1.
+            myAction.action = [this, target](){
+                doAttack(target);
+            };
             break;
         default:
             cout<<"Invalid option"<<endl;
             break;
     }
 
-    return ActionResult(target, fleed);
+    return myAction;
 }

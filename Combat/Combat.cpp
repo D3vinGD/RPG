@@ -49,39 +49,28 @@ void Combat::prepareCombat() {
 void Combat::doCombat() {
     prepareCombat();
 
+    //Este while es 1 iteracion por ronda
     while(enemies.size() != 0 && teamMembers.size() != 0) {
         vector<Character*>::iterator participant = participants.begin();
 
+        //Una iteracion por turno de cada participante (player y enemigo)
         while(participant != participants.end()) {
             Character* target = nullptr;
-            if((*participant)->getIsPlayer()){
-                ActionResult playerAction = ((Player*)*participant)->takeAction(enemies);
-                if(playerAction.target && playerAction.target->getHealth() <= 0) {
-                    participant = participants.erase(remove(participants.begin(), participants.end(), playerAction.target), participants.end());
-                    enemies.erase(remove(enemies.begin(), enemies.end(), playerAction.target), enemies.end());
-                } else if (playerAction.fleed) {
-                    return;
-                } else {
-                    participant++;
-                }
+            Action currentAction;
+            if((*participant)->getIsPlayer()) {
+                currentAction = ((Player*)*participant)->takeAction(enemies);
             }
             else {
-                //TODO: Hacer refactor de esta seccion del codigo para usar el metodo takeAction
-                target = ((Enemy*)*participant)->getTarget(teamMembers);
-                (*participant)->doAttack(target);
-                if(target->getHealth() <= 0) {
-                    participant = participants.erase(remove(participants.begin(), participants.end(), target), participants.end());
-                    if(target->getIsPlayer()) {
-                        teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), target), teamMembers.end());
-                    }
-                    else {
-                        enemies.erase(remove(enemies.begin(), enemies.end(), target), enemies.end());
-                    }
-                } else {
-                    participant++;
-                }
+                currentAction = ((Enemy*)*participant)->takeAction(teamMembers);
             }
-
+            actions.push(currentAction);
+            participant++;
+        }
+        //Aqui se ejecutan las acciones
+        while(!actions.empty()) {
+            Action currentAction = actions.top();
+            currentAction.action();
+            actions.pop();
         }
     }
 

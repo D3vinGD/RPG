@@ -7,8 +7,9 @@
 
 #include "../Character/Character.h"
 #include "../Enemy/Enemy.h"
-#include "./ActionResult.h"
+#include "../Combat/Action.h"
 
+struct Action;
 class Enemy;
 
 class Player: public Character {
@@ -25,7 +26,9 @@ public:
     void emote();
     void levelUp();
     void gainExperience(int);
-    ActionResult takeAction(vector<Enemy*> enemies);
+
+    //Podemos hacer que este vector sea polimorfico?
+    Action takeAction(vector<Enemy*> enemies);
 };
 
 

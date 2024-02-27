@@ -165,7 +165,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Player/ActionResult.h",
+			"path" : "Combat/Action.h",
 			"sourceGroupIndex" : 1
 		}
 	],

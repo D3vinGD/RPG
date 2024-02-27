@@ -46,3 +46,14 @@ Character* Enemy::getTarget(vector<Player *> teamMembers) {
     return teamMembers[targetIndex];
 }
 
+Action Enemy::takeAction(vector<Player *> player) {
+    Action myAction;
+    myAction.speed = getSpeed();
+    Character* target = getTarget(player);
+    myAction.action = [this, target]() {
+        doAttack(target);
+    };
+
+    return myAction;
+}
+
