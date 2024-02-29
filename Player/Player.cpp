@@ -82,6 +82,37 @@ Character* Player::getTarget(vector<Enemy *> enemies) {
     return enemies[targetIndex];
 }
 
+Action Player::takeAction(vector<std::shared_ptr<Character>> possibleTargets){
+    int option = 0;
+    cout<<"Choose an action"<<endl;
+    cout<<"1. Attack"<<endl;
+//    cout<<"2. Flee"<<endl;
+    cin >> option;
+    Character* target = nullptr;
+
+    //Esta variable guarda
+    //1. Que voy a hacer?
+    //2. Con que velocidad/prioridad?
+    Action myAction;
+    //2.
+    myAction.speed = getSpeed();
+
+    switch(option) {
+        case 1:
+            target = getTarget(enemies);
+            //1.
+            myAction.action = [this, target](){
+                doAttack(target);
+            };
+            break;
+        default:
+            cout<<"Invalid option"<<endl;
+            break;
+    }
+
+    return myAction;
+}
+
 Action Player::takeAction(vector<Enemy*>enemies) {
     int option = 0;
     cout<<"Choose an action"<<endl;
