@@ -26,6 +26,12 @@ private:
 
     void prepareCombat();
     Character* getTarget(Character* target);
+    void registerActions();
+    void executeActions();
+
+    void checkParticipantStatus(Character* participant);
+    void checkForFlee(Character* character);
+
 public:
     Combat(vector<Character*> _participants);
     Combat(vector<Player*> _teamMembers, vector<Enemy*> _enemies);

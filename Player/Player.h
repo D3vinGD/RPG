@@ -20,11 +20,10 @@ public:
     Player(string _name, int _health, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
-    Action takeAction(vector<std::shared_ptr<Character>> possibleTargets) override;
 
     Character* getTarget(vector<Enemy*> enemies);
 
-    bool flee(vector<Enemy*> enemies);
+    void flee(vector<Enemy*> enemies);
     void emote();
     void levelUp();
     void gainExperience(int);

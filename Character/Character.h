@@ -17,13 +17,13 @@ protected:
     int defense;
     int speed;
     bool isPlayer;
+    bool fleed;
 
 public:
     Character(string, int, int, int, int, bool);
 
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
-    virtual Action takeAction(vector<std::shared_ptr<Character>> possibleTargets) = 0;
 
     void setName(string);
     string getName();
@@ -37,6 +37,7 @@ public:
     int getSpeed();
     string toString();
     bool getIsPlayer();
+    bool hasFleed();
 };
 
 

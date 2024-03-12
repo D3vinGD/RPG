@@ -49,7 +49,9 @@ Character* Enemy::getTarget(vector<Player *> teamMembers) {
 Action Enemy::takeAction(vector<Player *> player) {
     Action myAction;
     myAction.speed = getSpeed();
+    myAction.subscriber = this;
     Character* target = getTarget(player);
+    myAction.target = target;
     myAction.action = [this, target]() {
         doAttack(target);
     };
