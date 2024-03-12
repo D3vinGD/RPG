@@ -1,3 +1,0 @@
-/Users/vnavarro/ceti/POO-2O/rpg/cmake-build-debug/CMakeFiles/rpg.dir
-/Users/vnavarro/ceti/POO-2O/rpg/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/vnavarro/ceti/POO-2O/rpg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
