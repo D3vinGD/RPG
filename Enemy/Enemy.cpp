@@ -23,28 +23,29 @@ Enemy::Enemy(string name, int health, int attack, int defense, int speed) : Char
     maxHealth = health;
 }
 
-void Enemy::doAttack(Character *target) {
+void Enemy::doAttack(Character* target) {
     int rolledAttack = getRolledAttack(getAttack());
     int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
     target->takeDamage(trueDamage);
 }
 
+
 void Enemy::takeDamage(int damage) {
     setHealth(getHealth() - damage);
-    if(getHealth() <= 0) {
+    if (getHealth() <= 0) {
         cout << CYAN << "\t(!) " << getName() << " has died\n" << RESET << endl;
     }
     else {
-        cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET ;
+        cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET;
     }
 }
 
-Character* Enemy::getTarget(vector<Player *> teamMembers) {
+Character* Enemy::getTarget(vector<Player*> teamMembers) {
     // Obtiene el miembro del equipo con menos vida
     int targetIndex = 0;
     int lowestHealth = INT_MAX;
-    for(int i=0; i < teamMembers.size(); i++) {
-        if(teamMembers[i]->getHealth() < lowestHealth) {
+    for (int i = 0; i < teamMembers.size(); i++) {
+        if (teamMembers[i]->getHealth() < lowestHealth) {
             lowestHealth = teamMembers[i]->getHealth();
             targetIndex = i;
         }
@@ -57,15 +58,24 @@ int Enemy::getMaxHealth() {
     return maxHealth;
 }
 
-Action Enemy::takeAction(vector<Player *> player) {
+Action Enemy::takeAction(vector<Player*> player) {
     Action myAction;
     myAction.speed = getSpeed();
     myAction.subscriber = this;
     Character* target = getTarget(player);
     myAction.target = target;
-    myAction.action = [this, target]() {
+    if ((getMaxHealth() * 0.50 >= getHealth()) && rand() % 100 < 50){//ver si huye el pendejo este
+        myAction.action = [this, target]() {
+            this->fleed = true;
+        };
+    }
+    else
+    {
+        myAction.action = [this, target]() {
         doAttack(target);
         };
+    }
+    
 
     return myAction;
 }

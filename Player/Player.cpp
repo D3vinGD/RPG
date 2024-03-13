@@ -69,8 +69,10 @@ void Player::flee(vector<Enemy *> enemies) {
     } else {
         srand(time(NULL));
         int chance = rand() % 100;
-        cout << "chance: " << chance << endl;
-        fleed = chance > 99;
+        fleed = chance > 80;
+        if (fleed == false) {
+            cout << ORANGE << "\t("<<chance<<"%/80) You couldn't fleed" << RESET << endl;
+        }
     }
 
     this->fleed = fleed;

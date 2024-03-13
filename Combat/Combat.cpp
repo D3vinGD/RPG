@@ -4,6 +4,14 @@
 #include "Combat.h"
 #include <iostream>
 #include <algorithm>
+#include <vector>
+
+#define RESET   "\033[0m"
+#define RED     "\033[31m"      /* Red */
+#define GREEN   "\033[32m"      /* Green */
+#define YELLOW  "\033[33m"      /* Yellow */
+#define CYAN    "\033[36m"      /* Cyan */
+#define ORANGE "\033[38;5;208m" /* Orange */
 
 using namespace std;
 
@@ -57,10 +65,10 @@ void Combat::doCombat() {
 
     //No se imprime el nombre del ganador
     if(enemies.size() == 0) {
-        cout<<"You have won the combat"<<endl;
+        cout<< GREEN <<"\n\t{ You have won the combat }"<< RESET <<endl;
     }
     else {
-        cout<<"The enemies have won the combat - Game Over"<<endl;
+        cout<< RED <<"\n\t{ The enemies have won the combat - Game Over }"<< RESET <<endl;
     }
 }
 
@@ -87,9 +95,22 @@ void Combat::executeActions() {
         Action currentAction = actions.top();
         currentAction.action();
         checkForFlee(currentAction.subscriber);
-        checkParticipantStatus(currentAction.subscriber);
-        checkParticipantStatus(currentAction.target);
-        actions.pop();
+        if (currentAction.target != nullptr) {
+            checkParticipantStatus(currentAction.subscriber);
+            checkParticipantStatus(currentAction.target);
+            actions.pop();
+        }
+        else if(currentAction.subscriber->hasFleed())
+        {
+            while (!actions.empty()) {
+                actions.pop();
+            }
+        }
+        else
+        {
+            actions.pop();
+        }
+        
     }
 }
 
@@ -109,15 +130,17 @@ void Combat::checkForFlee(Character *character) {
     bool fleed = character->hasFleed();
     if(fleed) {
         if(character->getIsPlayer()) {
-            cout<<"You have fled the combat"<<endl;
+
+            cout << CYAN << "\t>" << character->getName() << " has fled the combat" << RESET << endl;
             teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), character), teamMembers.end());
         }
         else {
-            cout<<character->getName()<<" has fled the combat"<<endl;
+            cout<< CYAN<< "\t>" << character->getName() << " has fled the combat" << RESET << endl;
             enemies.erase(remove(enemies.begin(), enemies.end(), character), enemies.end());
         }
         participants.erase(remove(participants.begin(), participants.end(), character), participants.end());
     }
+    
 }
 
 string Combat::participantsToString() {

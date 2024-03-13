@@ -29,6 +29,7 @@ public:
     void levelUp();
     void gainExperience(int);
 
+
     //Podemos hacer que este vector sea polimorfico?
     Action takeAction(vector<Enemy*> enemies);
 
