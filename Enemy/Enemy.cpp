@@ -4,6 +4,12 @@
 #include "Enemy.h"
 #include <iostream>
 
+#define RESET   "\033[0m"
+#define RED     "\033[31m"      /* Red */
+#define GREEN   "\033[32m"      /* Green */
+#define YELLOW  "\033[33m"      /* Yellow */
+#define CYAN    "\033[36m"      /* Cyan */
+
 
 using namespace std;
 
@@ -14,6 +20,7 @@ int getRolledAttack(int attack) {
 }
 
 Enemy::Enemy(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed, false) {
+    maxHealth = health;
 }
 
 void Enemy::doAttack(Character *target) {
@@ -25,10 +32,10 @@ void Enemy::doAttack(Character *target) {
 void Enemy::takeDamage(int damage) {
     setHealth(getHealth() - damage);
     if(getHealth() <= 0) {
-        cout<<getName()<<" has died"<<endl;
+        cout << CYAN << "\t(!) " << getName() << " has died\n" << RESET << endl;
     }
     else {
-        cout<<getName()<<" has taken " << damage << " damage" << endl;
+        cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET ;
     }
 }
 
@@ -46,6 +53,10 @@ Character* Enemy::getTarget(vector<Player *> teamMembers) {
     return teamMembers[targetIndex];
 }
 
+int Enemy::getMaxHealth() {
+    return maxHealth;
+}
+
 Action Enemy::takeAction(vector<Player *> player) {
     Action myAction;
     myAction.speed = getSpeed();
@@ -54,7 +65,7 @@ Action Enemy::takeAction(vector<Player *> player) {
     myAction.target = target;
     myAction.action = [this, target]() {
         doAttack(target);
-    };
+        };
 
     return myAction;
 }

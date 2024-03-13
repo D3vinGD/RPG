@@ -18,6 +18,8 @@ public:
     void takeDamage(int damage) override;
     Character* getTarget(vector<Player*> teamMembers);
     Action takeAction(vector<Player*> player);
+
+    int getMaxHealth();
 };
 
 

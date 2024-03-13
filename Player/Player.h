@@ -16,6 +16,7 @@ class Player: public Character {
 protected:
     int experience;
     int level;
+    bool warning;
 public:
     Player(string _name, int _health, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;

@@ -19,6 +19,8 @@ protected:
     bool isPlayer;
     bool fleed;
 
+    int maxHealth;
+
 public:
     Character(string, int, int, int, int, bool);
 
