@@ -46,6 +46,10 @@ void Player::doAttack(Character *target) {
         cout << endl;
         gainExperience(15);
     }
+    if (target->getHealth() <= 0)
+    {
+        kills++;
+    }
     
 }
 
@@ -82,7 +86,8 @@ void Player::flee(vector<Enemy *> enemies) {
 }
 
 void Player::emote() {
-    cout << "Jokes on you" << endl;
+    cout << MAGENTA << "\t" << getName() << " se caga de risa xdxdXDDDD" << RESET << endl;
+    kills = 0;
 }
 
 void Player::levelUp() {
@@ -92,11 +97,12 @@ void Player::levelUp() {
     setDefense(getDefense() + 1);
     setSpeed(getSpeed() + 3);
 
-    if (health >= maxHealth * 0.30) {
+    if ((health >= maxHealth * 0.30)&&(warning == true)) {
         warning = false;
+        cout << ORANGE << "\t(!)" << name << ", nevermind you level up" << RESET << endl;
     }
 
-    cout << YELLOW << "\n\t~~~~~~~~~~~~~\n" << name << ", your level has gone up to "<< level <<"\n\t~~~~~~~~~~~~~\n"<< RESET << endl;
+    cout << YELLOW << "\t(^)" << name << ", your level has gone up to "<< level << RESET << endl;
     
 }
 
@@ -121,38 +127,62 @@ Character *Player::getTarget(vector<Enemy *> enemies) {
 
 Action Player::takeAction(vector<Enemy *> enemies) {
     int option = 0;
-    cout << "\n==<>==<>==<>==[ " << name << ", choose an action ]==<>==<>==<>==" << endl;
-    cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
-    cout << RED << "\n\t1. Attack\t" << RESET;
-    cout << CYAN << "2. Flee" << RESET << endl;
-    cin >> option;
-    Character *target = nullptr;
-
-    //Esta variable guarda
-    //1. Que voy a hacer?
-    //2. Con que velocidad/prioridad?
+    int cont = 0;
+    Character* target = nullptr;
     Action myAction;
-    //2.
+
     myAction.speed = this->getSpeed();
     myAction.subscriber = this;
 
-    switch (option) {
+    while (cont == 0) {
+        cout << "\n==<>==<>==<>==[ " << name << ", choose an action ]==<>==<>==<>==" << endl;
+        cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
+    
+        if (getKills() <= 0)
+        {
+            cout << RED << "\n\t1. Attack\t" << RESET;
+            cout << CYAN << "2. Flee\t" << RESET << endl;
+        }
+        else
+        {
+            cout << RED << "\n\t1. Attack\t" << RESET;
+            cout << CYAN << "2. Flee\t" << RESET;
+            cout << MAGENTA << "\t3. Emote" << RESET << endl;
+        }
+       
+
+            cin >> option;
+        switch (option) {
         case 1:
             target = getTarget(enemies);
             myAction.target = target;
             //1.
             myAction.action = [this, target]() {
                 doAttack(target);
-            };
+                };
+            cont = 1;
             break;
         case 2:
             myAction.action = [this, enemies]() {
                 flee(enemies);
             };
+            cont = 1;
+            break;
+        case 3:
+            if (kills > 0) {
+                myAction.action = [this, enemies]() {
+                    emote();
+                };
+                cont = 1;
+            }
+            else {
+                system("cls");
+            }
             break;
         default:
-            cout << "Invalid option" << endl;
+            system("cls");
             break;
+        }
     }
 
     return myAction;

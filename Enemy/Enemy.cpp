@@ -35,11 +35,14 @@ void Enemy::doAttack(Character* target) {
 
 void Enemy::takeDamage(int damage) {
     setHealth(getHealth() - damage);
-    if (getHealth() <= 0) {
-        cout << MAGENTA << "\t(!) " << getName() << " has died" << RESET << endl;
-    }
-    else {
-        cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET;
+    if (this->fleed != true) {
+        if (getHealth() <= 0) {
+            cout << MAGENTA << "\t(!) " << getName() << " has died" << RESET;
+
+        }
+        else {
+            cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET;
+        }
     }
 }
 
@@ -68,21 +71,18 @@ Action Enemy::takeAction(vector<Player*> player) {
     Character* target = getTarget(player);
     myAction.target = target;
 
+        if (((getMaxHealth() * 0.25 >= getHealth()) && rand() % 100 < 50)) {//ver si huye el pendejo este
+            myAction.action = [this, target]() {
+                this->fleed = true;
+                };
+        }
+        else
+        {
+            myAction.action = [this, target]() {
+                doAttack(target);
 
-
-    if (((getMaxHealth() * 0.25 >= getHealth()) && rand() % 100 < 50) && (getHealth() > 0)) {//ver si huye el pendejo este
-        myAction.action = [this, target]() {
-            this->fleed = true;
-        };
-    }
-    else
-    {
-        myAction.action = [this, target]() {
-        doAttack(target);
-        
-        };
-    }
-    
+                };
+        }
 
     return myAction;
 }

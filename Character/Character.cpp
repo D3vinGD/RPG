@@ -12,6 +12,7 @@ Character::Character(string _name, int _health, int _attack, int _defense, int _
     speed = _speed;
     isPlayer = _isPlayer;
     fleed = false;
+    kills = 0;
 }
 
 void Character::setName(string _name) {
@@ -85,7 +86,13 @@ string Character::getLifeBar() {
         }
 
     }
-    lifebar.append("]");
+    lifebar.append("] ");
+    lifebar.append(to_string(getHealth()));
+    lifebar.append("|");
+    lifebar.append(to_string(getMaxHealth()));
 
     return lifebar;
+}
+int Character::getKills() {
+    return kills;
 }

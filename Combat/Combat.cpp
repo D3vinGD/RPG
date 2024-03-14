@@ -93,6 +93,7 @@ void Combat::registerActions() {
 
 void Combat::executeActions() {
     //Aqui se ejecutan las acciones
+    system("cls");
     while(!actions.empty()) {
         Action currentAction = actions.top();
         currentAction.action();
@@ -114,6 +115,7 @@ void Combat::executeActions() {
         }
         
     }
+    
 }
 
 void Combat::checkParticipantStatus(Character* participant) {
@@ -123,6 +125,7 @@ void Combat::checkParticipantStatus(Character* participant) {
         }
         else {
             enemies.erase(remove(enemies.begin(), enemies.end(), participant), enemies.end());
+            
         }
         participants.erase(remove(participants.begin(), participants.end(), participant), participants.end());
     }
@@ -130,19 +133,20 @@ void Combat::checkParticipantStatus(Character* participant) {
 
 void Combat::checkForFlee(Character *character) {
     bool fleed = character->hasFleed();
-    if(fleed) {
-        if(character->getIsPlayer()) {
+    if (character->getHealth() > 0) {
+        if (fleed) {
+            if (character->getIsPlayer()) {
 
-            cout << CYAN << "\t>" << character->getName() << " has fled" << RESET << endl;
-            teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), character), teamMembers.end());
+                cout << CYAN << "\t>" << character->getName() << " has fled" << RESET << endl;
+                teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), character), teamMembers.end());
+            }
+            else {
+                cout << CYAN << "\t>" << character->getName() << " has fled" << RESET << endl;
+                enemies.erase(remove(enemies.begin(), enemies.end(), character), enemies.end());
+            }
+            participants.erase(remove(participants.begin(), participants.end(), character), participants.end());
         }
-        else {
-            cout<< CYAN<< "\t>" << character->getName() << " has fled" << RESET << endl;
-            enemies.erase(remove(enemies.begin(), enemies.end(), character), enemies.end());
-        }
-        participants.erase(remove(participants.begin(), participants.end(), character), participants.end());
     }
-    
 }
 
 string Combat::participantsToString() {

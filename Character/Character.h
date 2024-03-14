@@ -18,6 +18,7 @@ protected:
     int speed;
     bool isPlayer;
     bool fleed;
+    int kills;
 
     int maxHealth;
 
@@ -44,6 +45,7 @@ public:
     bool hasFleed();
 
     string getLifeBar();
+    int getKills();
 };
 
 
