@@ -86,7 +86,7 @@ void Player::flee(vector<Enemy *> enemies) {
 }
 
 void Player::emote() {
-    cout << MAGENTA << "\t" << getName() << " se caga de risa xdxdXDDDD" << RESET << endl;
+    cout << MAGENTA << "\t" << getName() << " T-bag's you" << RESET << endl;
     kills = 0;
 }
 
