@@ -12,6 +12,7 @@
 #define YELLOW  "\033[33m"      /* Yellow */
 #define CYAN    "\033[36m"      /* Cyan */
 #define ORANGE "\033[38;5;208m" /* Orange */
+#define MAGENTA "\033[35m"      /*Magenta*/
 
 using namespace std;
 using namespace combat_utils;
@@ -38,12 +39,14 @@ void Player::doAttack(Character *target) {
     target->takeDamage(trueDamage);
     if (CriticalHit && target->getHealth() > 0) {
         cout << GREEN << "  [ Critical Hit! ]" << RESET << endl;
+        gainExperience(25);
     }
     else
     {
         cout << endl;
+        gainExperience(15);
     }
-    gainExperience(25);
+    
 }
 
 void Player::takeDamage(int damage) {
@@ -56,7 +59,7 @@ void Player::takeDamage(int damage) {
     }
 
     if (health <= 0) {
-        cout << CYAN << "\n\t(~) " << name << " have died" << RESET << endl;
+        cout << MAGENTA << "\n\t(~) " << name << " have died" << RESET << endl;
     }
 }
 
@@ -106,10 +109,10 @@ void Player::gainExperience(int exp) {
 }
 
 Character *Player::getTarget(vector<Enemy *> enemies) {
-    cout << "Choose a target" << endl;
+    cout << "\t\t| Choose a target |\n" << endl;
     int targetIndex = 0;
     for (int i = 0; i < enemies.size(); i++) {
-        cout << i << ". " << enemies[i]->getName() << endl;
+        cout << i << ". " << enemies[i]->getName() << "\t"<< enemies[i]->getLifeBar() << endl;
     }
     cin >> targetIndex;
     //TODO: Add input validation
@@ -118,9 +121,10 @@ Character *Player::getTarget(vector<Enemy *> enemies) {
 
 Action Player::takeAction(vector<Enemy *> enemies) {
     int option = 0;
-    cout << "\n" << name << ", choose an action" << endl;
-    cout << "1. Attack" << endl;
-    cout << "2. Flee" << endl;
+    cout << "\n==<>==<>==<>==[ " << name << ", choose an action ]==<>==<>==<>==" << endl;
+    cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
+    cout << RED << "\n\t1. Attack\t" << RESET;
+    cout << CYAN << "2. Flee" << RESET << endl;
     cin >> option;
     Character *target = nullptr;
 

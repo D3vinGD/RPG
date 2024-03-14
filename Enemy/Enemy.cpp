@@ -3,12 +3,15 @@
 //
 #include "Enemy.h"
 #include <iostream>
+#include <string>
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"      /* Red */
 #define GREEN   "\033[32m"      /* Green */
 #define YELLOW  "\033[33m"      /* Yellow */
 #define CYAN    "\033[36m"      /* Cyan */
+#define MAGENTA "\033[35m"
+#define ROSA "\033[38;5;206m"
 
 
 using namespace std;
@@ -33,7 +36,7 @@ void Enemy::doAttack(Character* target) {
 void Enemy::takeDamage(int damage) {
     setHealth(getHealth() - damage);
     if (getHealth() <= 0) {
-        cout << CYAN << "\t(!) " << getName() << " has died\n" << RESET << endl;
+        cout << MAGENTA << "\t(!) " << getName() << " has died" << RESET << endl;
     }
     else {
         cout << GREEN << "\t(+) " << getName() << " has taken " << damage << " damage" << RESET;
@@ -64,7 +67,10 @@ Action Enemy::takeAction(vector<Player*> player) {
     myAction.subscriber = this;
     Character* target = getTarget(player);
     myAction.target = target;
-    if ((getMaxHealth() * 0.50 >= getHealth()) && rand() % 100 < 50){//ver si huye el pendejo este
+
+
+
+    if (((getMaxHealth() * 0.25 >= getHealth()) && rand() % 100 < 50) && (getHealth() > 0)) {//ver si huye el pendejo este
         myAction.action = [this, target]() {
             this->fleed = true;
         };
@@ -73,10 +79,10 @@ Action Enemy::takeAction(vector<Player*> player) {
     {
         myAction.action = [this, target]() {
         doAttack(target);
+        
         };
     }
     
 
     return myAction;
 }
-

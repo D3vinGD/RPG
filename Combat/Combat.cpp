@@ -12,6 +12,8 @@
 #define YELLOW  "\033[33m"      /* Yellow */
 #define CYAN    "\033[36m"      /* Cyan */
 #define ORANGE "\033[38;5;208m" /* Orange */
+#define ROSA "\033[38;5;206m"
+
 
 using namespace std;
 
@@ -131,11 +133,11 @@ void Combat::checkForFlee(Character *character) {
     if(fleed) {
         if(character->getIsPlayer()) {
 
-            cout << CYAN << "\t>" << character->getName() << " has fled the combat" << RESET << endl;
+            cout << CYAN << "\t>" << character->getName() << " has fled" << RESET << endl;
             teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), character), teamMembers.end());
         }
         else {
-            cout<< CYAN<< "\t>" << character->getName() << " has fled the combat" << RESET << endl;
+            cout<< CYAN<< "\t>" << character->getName() << " has fled" << RESET << endl;
             enemies.erase(remove(enemies.begin(), enemies.end(), character), enemies.end());
         }
         participants.erase(remove(participants.begin(), participants.end(), character), participants.end());

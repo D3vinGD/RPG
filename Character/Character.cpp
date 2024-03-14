@@ -2,6 +2,7 @@
 // Created by Victor Navarro on 13/02/24.
 //
 #include "Character.h"
+#include <string>
 
 Character::Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer) {
     name = _name;
@@ -63,4 +64,28 @@ bool Character::getIsPlayer() {
 
 bool Character::hasFleed() {
     return fleed;
+}
+
+int Character::getMaxHealth() {
+    return maxHealth;
+}
+
+string Character::getLifeBar() {
+    string lifebar = "[";
+    int slideLength = getHealth() * 30 / getMaxHealth();
+    for (size_t i = 1; i <= 30; i++)
+    {
+        if (i <= slideLength)
+        {
+            lifebar.append("=");
+        }
+        else
+        {
+            lifebar.append(" ");
+        }
+
+    }
+    lifebar.append("]");
+
+    return lifebar;
 }

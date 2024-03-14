@@ -27,6 +27,8 @@ public:
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
 
+    int getMaxHealth();
+
     void setName(string);
     string getName();
     void setHealth(int);
@@ -40,6 +42,8 @@ public:
     string toString();
     bool getIsPlayer();
     bool hasFleed();
+
+    string getLifeBar();
 };
 
 

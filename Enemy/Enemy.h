@@ -20,7 +20,6 @@ public:
     Action takeAction(vector<Player*> player);
 
     int getMaxHealth();
-
 };
 
 
