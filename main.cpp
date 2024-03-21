@@ -7,9 +7,9 @@
 using namespace std;
 
 int main() {
-    Player *player = new Player("Devin", 100, 25, 20, 15);
-    Enemy *enemy = new Enemy("Ingenieria", 100, 20, 5, 35);
-    Enemy *enemy2 = new Enemy("La vida", 100, 35, 5, 10);
+    Player *player = new Player("Devin", 100, 25, 15, 15);
+    Enemy *enemy = new Enemy("Ingenieria", 100, 20, 8, 35);
+    Enemy *enemy2 = new Enemy("La vida", 100, 35, 6, 10);
 
     vector<Character*> participants;
     participants.push_back(player);
@@ -23,6 +23,5 @@ int main() {
     delete enemy;
     delete enemy2;
     delete combat;
-
     return 0;
 }

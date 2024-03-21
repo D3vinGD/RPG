@@ -25,7 +25,7 @@ public:
     Character* getTarget(vector<Enemy*> enemies);
 
     void flee(vector<Enemy*> enemies);
-    void emote();
+    void emote(vector<Enemy*> enemies);
     void levelUp();
     void gainExperience(int);
 

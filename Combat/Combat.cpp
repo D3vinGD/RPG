@@ -7,11 +7,11 @@
 #include <vector>
 
 #define RESET   "\033[0m"
-#define RED     "\033[31m"      /* Red */
-#define GREEN   "\033[32m"      /* Green */
-#define YELLOW  "\033[33m"      /* Yellow */
-#define CYAN    "\033[36m"      /* Cyan */
-#define ORANGE "\033[38;5;208m" /* Orange */
+#define RED     "\033[31m"      
+#define GREEN   "\033[32m"      
+#define YELLOW  "\033[33m"      
+#define CYAN    "\033[36m"      
+#define ORANGE "\033[38;5;208m"
 #define ROSA "\033[38;5;206m"
 
 
@@ -117,7 +117,6 @@ void Combat::executeActions() {
     }
     
 }
-
 void Combat::checkParticipantStatus(Character* participant) {
     if(participant->getHealth() <= 0) {
         if(participant->getIsPlayer()) {

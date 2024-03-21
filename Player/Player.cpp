@@ -37,9 +37,10 @@ void Player::doAttack(Character *target) {
     }
     int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
     target->takeDamage(trueDamage);
-    if (CriticalHit && target->getHealth() > 0) {
+    if (CriticalHit && (target->getHealth() > 0)) {
         cout << GREEN << "  [ Critical Hit! ]" << RESET << endl;
         gainExperience(25);
+        CriticalHit = false;
     }
     else
     {
@@ -85,8 +86,15 @@ void Player::flee(vector<Enemy *> enemies) {
     this->fleed = fleed;
 }
 
-void Player::emote() {
-    cout << MAGENTA << "\t" << getName() << " T-bag's you" << RESET << endl;
+void Player::emote(vector<Enemy*> enemies) {
+    cout << MAGENTA << "\t" << getName() << ": * Does T-bag *" << RESET << endl;
+
+    for (int i = 0; i < enemies.size(); i++)
+    {
+        enemies[i]->setDefense(enemies[i]->getDefense() - 2 );
+    }
+    cout << MAGENTA << "\t(*) All enemies defense has been diminished" << RESET << endl;
+
     kills = 0;
 }
 
@@ -117,11 +125,15 @@ void Player::gainExperience(int exp) {
 Character *Player::getTarget(vector<Enemy *> enemies) {
     cout << "\t\t| Choose a target |\n" << endl;
     int targetIndex = 0;
-    for (int i = 0; i < enemies.size(); i++) {
-        cout << i << ". " << enemies[i]->getName() << "\t"<< enemies[i]->getLifeBar() << endl;
-    }
-    cin >> targetIndex;
-    //TODO: Add input validation
+    do
+    {
+        for (int i = 0; i < enemies.size(); i++) {
+            cout << i << ". " << enemies[i]->getName() << "\t" << enemies[i]->getLifeBar() << endl;
+        }
+        cin >> targetIndex;
+
+    } while (  !(targetIndex >= 0 && targetIndex < enemies.size()) );
+    
     return enemies[targetIndex];
 }
 
@@ -171,7 +183,7 @@ Action Player::takeAction(vector<Enemy *> enemies) {
         case 3:
             if (kills > 0) {
                 myAction.action = [this, enemies]() {
-                    emote();
+                    emote(enemies);
                 };
                 cont = 1;
             }
