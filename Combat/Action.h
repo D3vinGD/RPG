@@ -13,7 +13,7 @@ struct Action {
     int speed = 0;
     Character* subscriber = nullptr;
     Character* target = nullptr;
-    std::function<void(void)> action = nullptr;
+    std::function<void(void)> action = nullptr; 
 
     Action(std::function<void(void)> _action, int _speed, Character* _subscriber, Character* _target) {
         action = _action;
@@ -23,7 +23,7 @@ struct Action {
     }
     Action(){};
 
-    bool operator<(const Action& p) const
+    bool operator<(const Action& p) const 
     {
         return this->speed < p.speed;
     }

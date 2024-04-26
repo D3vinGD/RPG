@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Character\Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Player\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Enemy\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Combat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Character\Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Player\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Enemy\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E5FA696D-8909-3D87-BCC0-1F144B42ADD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57835728-D50F-34F1-85B4-E000FC60A7F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

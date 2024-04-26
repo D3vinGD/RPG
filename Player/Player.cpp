@@ -21,7 +21,7 @@ bool compareSpeed(Enemy *a, Enemy *b) {
     return a->getSpeed() > b->getSpeed();
 }
 
-Player::Player(string name, int health, int attack, int defense, int speed) : Character(name, health, attack, defense,
+Player::Player(char name[], int health, int attack, int defense, int speed) : Character(name, health, attack, defense,
                                                                                         speed, true) {
     experience = 0;
     level = 1;
@@ -78,7 +78,7 @@ void Player::flee(vector<Enemy *> enemies) {
         srand(time(NULL));
         int chance = rand() % 100;
         fleed = chance > 80;
-        if (fleed == false) {
+        if ((fleed == false) && (this->getHealth() > 0)) {
             cout << ORANGE << "\t("<<chance<<"%/80) You couldn't fleed" << RESET << endl;
         }
     }
@@ -106,11 +106,11 @@ void Player::levelUp() {
     setSpeed(getSpeed() + 3);
 
     if ((health >= maxHealth * 0.30)&&(warning == true)) {
+        cout << ORANGE << "\t(!)" << getName() << ", nevermind you level up" << RESET << endl;
         warning = false;
-        cout << ORANGE << "\t(!)" << name << ", nevermind you level up" << RESET << endl;
     }
 
-    cout << YELLOW << "\t(^)" << name << ", your level has gone up to "<< level << RESET << endl;
+    cout << YELLOW << "\t(^)" << getName() << ", your level has gone up to "<< level << RESET << endl;
     
 }
 
@@ -139,15 +139,15 @@ Character *Player::getTarget(vector<Enemy *> enemies) {
 
 Action Player::takeAction(vector<Enemy *> enemies) {
     int option = 0;
-    int cont = 0;
+    bool actionTaked = false;
     Character* target = nullptr;
     Action myAction;
 
     myAction.speed = this->getSpeed();
     myAction.subscriber = this;
 
-    while (cont == 0) {
-        cout << "\n==<>==<>==<>==[ " << name << ", choose an action ]==<>==<>==<>==" << endl;
+    while (actionTaked == false) {
+        cout << "\n==<>==<>==<>==[ " << getName() << ", choose an action ]==<>==<>==<>==" << endl;
         cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
     
         if (getKills() <= 0)
@@ -172,20 +172,20 @@ Action Player::takeAction(vector<Enemy *> enemies) {
             myAction.action = [this, target]() {
                 doAttack(target);
                 };
-            cont = 1;
+                actionTaked = true;
             break;
         case 2:
             myAction.action = [this, enemies]() {
                 flee(enemies);
             };
-            cont = 1;
+            actionTaked = true;
             break;
         case 3:
             if (kills > 0) {
                 myAction.action = [this, enemies]() {
                     emote(enemies);
                 };
-                cont = 1;
+                actionTaked = true;
             }
             else {
                 system("cls");

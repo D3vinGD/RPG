@@ -3,50 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Combat\\Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Combat\\Action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\functional||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Character\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Character\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Combat\\Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Combat\\Combat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Combat\\Action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -71,33 +68,134 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "functional",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\functional",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\functional",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\functional",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\functional",
-              "ViewState": "AQIAAKkDAAAAAAAAAAArwLUDAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-14T17:20:29.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.cpp",
               "RelativeDocumentMoniker": "Player\\Player.cpp",
               "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.cpp",
               "RelativeToolTip": "Player\\Player.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAYwFQAAAAAAAAA",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAAJUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-13T01:50:18.963Z",
+              "WhenOpened": "2024-04-16T19:13:49.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h",
+              "RelativeDocumentMoniker": "Player\\Player.h",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h",
+              "RelativeToolTip": "Player\\Player.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-13T02:20:17.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Action.h",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h",
+              "RelativeDocumentMoniker": "Combat\\Action.h",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h",
+              "RelativeToolTip": "Combat\\Action.h",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-13T01:56:40.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Combat.cpp",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp",
+              "RelativeDocumentMoniker": "Combat\\Combat.cpp",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp",
+              "RelativeToolTip": "Combat\\Combat.cpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAGEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-13T02:05:21.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Enemy\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.cpp",
+              "RelativeToolTip": "Enemy\\Enemy.cpp",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAABgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-13T02:14:21.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-13T01:54:01.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Character.cpp",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.cpp",
+              "RelativeDocumentMoniker": "Character\\Character.cpp",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.cpp",
+              "RelativeToolTip": "Character\\Character.cpp",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-13T02:02:58.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Character.h",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.h",
+              "RelativeDocumentMoniker": "Character\\Character.h",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.h",
+              "RelativeToolTip": "Character\\Character.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-13T02:02:12.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h",
+              "RelativeDocumentMoniker": "Enemy\\Enemy.h",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h",
+              "RelativeToolTip": "Enemy\\Enemy.h",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-13T02:45:59.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Combat.h",
+              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.h",
+              "RelativeDocumentMoniker": "Combat\\Combat.h",
+              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.h",
+              "RelativeToolTip": "Combat\\Combat.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAlwB8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-13T22:23:03.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Utils.h",
               "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Utils.h",
               "RelativeDocumentMoniker": "Utils.h",
@@ -106,120 +204,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-13T02:34:07.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Action.h",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h",
-              "RelativeDocumentMoniker": "Combat\\Action.h",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Action.h",
-              "RelativeToolTip": "Combat\\Action.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwCAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-13T01:56:40.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Combat.cpp",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp",
-              "RelativeDocumentMoniker": "Combat\\Combat.cpp",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.cpp",
-              "RelativeToolTip": "Combat\\Combat.cpp",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-13T02:05:21.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.cpp",
-              "RelativeDocumentMoniker": "Enemy\\Enemy.cpp",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.cpp",
-              "RelativeToolTip": "Enemy\\Enemy.cpp",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-13T02:14:21.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h",
-              "RelativeDocumentMoniker": "Player\\Player.h",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Player\\Player.h",
-              "RelativeToolTip": "Player\\Player.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-13T02:20:17.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-13T01:54:01.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Character.cpp",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.cpp",
-              "RelativeDocumentMoniker": "Character\\Character.cpp",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.cpp",
-              "RelativeToolTip": "Character\\Character.cpp",
-              "ViewState": "AQIAAF0AAAAAAAAAAABRwGAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-13T02:02:58.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Character.h",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.h",
-              "RelativeDocumentMoniker": "Character\\Character.h",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Character\\Character.h",
-              "RelativeToolTip": "Character\\Character.h",
-              "ViewState": "AQIAABEAAAAAAAAAAAAIwBQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-13T02:02:12.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h",
-              "RelativeDocumentMoniker": "Enemy\\Enemy.h",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Enemy\\Enemy.h",
-              "RelativeToolTip": "Enemy\\Enemy.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-13T02:45:59.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Combat.h",
-              "DocumentMoniker": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.h",
-              "RelativeDocumentMoniker": "Combat\\Combat.h",
-              "ToolTip": "C:\\Users\\devin\\Desktop\\Devin\\POO\\RPG\\2O-rpg-example\\Combat\\Combat.h",
-              "RelativeToolTip": "Combat\\Combat.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-13T22:23:03.503Z"
             },
             {
               "$type": "Document",
@@ -235,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "CMake Overview Pages",
               "DocumentMoniker": "CMake Overview Pages",
               "ToolTip": "CMake Overview Pages",

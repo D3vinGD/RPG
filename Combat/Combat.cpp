@@ -118,6 +118,10 @@ void Combat::executeActions() {
     
 }
 void Combat::checkParticipantStatus(Character* participant) {
+    if (participant == NULL)
+    {
+        return;
+    }
     if(participant->getHealth() <= 0) {
         if(participant->getIsPlayer()) {
             teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), participant), teamMembers.end());
@@ -137,6 +141,7 @@ void Combat::checkForFlee(Character *character) {
             if (character->getIsPlayer()) {
 
                 cout << CYAN << "\t>" << character->getName() << " has fled" << RESET << endl;
+                //erase soluciona el error de lost iterator
                 teamMembers.erase(remove(teamMembers.begin(), teamMembers.end(), character), teamMembers.end());
             }
             else {
