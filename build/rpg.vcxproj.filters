@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\main.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Character\Character.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Character\Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Player\Player.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Player\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Enemy\Enemy.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Enemy\Enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Combat.cpp">
+    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Combat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Character\Character.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Character\Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Player\Player.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Player\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Enemy\Enemy.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Enemy\Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Combat.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Combat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Utils.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\Combat\Action.h">
+    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Action.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\devin\Desktop\Devin\POO\RPG\2O-rpg-example\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{E5FA696D-8909-3D87-BCC0-1F144B42ADD9}</UniqueIdentifier>
+      <UniqueIdentifier>{986A0E57-E7A0-3FE3-8924-AD0F439A61FB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{57835728-D50F-34F1-85B4-E000FC60A7F6}</UniqueIdentifier>
+      <UniqueIdentifier>{3C202EC4-8DE3-32FF-859E-0D385B354ADD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

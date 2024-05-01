@@ -5,15 +5,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
-#define RESET   "\033[0m"
-#define RED     "\033[31m"      
-#define GREEN   "\033[32m"      
-#define YELLOW  "\033[33m"      
-#define CYAN    "\033[36m"      
-#define ORANGE "\033[38;5;208m"
-#define ROSA "\033[38;5;206m"
-
+#include "../colors.h"
 
 using namespace std;
 

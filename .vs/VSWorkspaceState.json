@@ -7,10 +7,11 @@
   },
   "ExpandedNodes": [
     "",
+    "\\Character",
     "\\Combat",
     "\\Enemy",
     "\\Player"
   ],
-  "SelectedNode": "\\Combat",
+  "SelectedNode": "\\Utils.h",
   "PreviewInSolutionExplorer": true
 }

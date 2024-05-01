@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/devin/Desktop/Devin/POO/RPG/2O-rpg-example
+# Install script for directory: C:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/devin/Desktop/Devin/POO/RPG/2O-rpg-example/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

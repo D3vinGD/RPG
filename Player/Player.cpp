@@ -5,14 +5,7 @@
 #include <iostream>
 #include "../Utils.h"
 #include <algorithm>
-
-#define RESET   "\033[0m"
-#define RED     "\033[31m"      /* Red */
-#define GREEN   "\033[32m"      /* Green */
-#define YELLOW  "\033[33m"      /* Yellow */
-#define CYAN    "\033[36m"      /* Cyan */
-#define ORANGE "\033[38;5;208m" /* Orange */
-#define MAGENTA "\033[35m"      /*Magenta*/
+#include "..\colors.h"
 
 using namespace std;
 using namespace combat_utils;
@@ -22,7 +15,7 @@ bool compareSpeed(Enemy *a, Enemy *b) {
 }
 
 Player::Player(char name[], int health, int attack, int defense, int speed) : Character(name, health, attack, defense,
-                                                                                        speed, true) {
+                                                                                        speed, XpReward, true) {
     experience = 0;
     level = 1;
     maxHealth = health;
@@ -39,17 +32,18 @@ void Player::doAttack(Character *target) {
     target->takeDamage(trueDamage);
     if (CriticalHit && (target->getHealth() > 0)) {
         cout << GREEN << "  [ Critical Hit! ]" << RESET << endl;
-        gainExperience(25);
         CriticalHit = false;
     }
     else
     {
         cout << endl;
-        gainExperience(15);
     }
-    if (target->getHealth() <= 0)
+    if ((target->getHealth() <= 0) && !(target->hasFleed()))
     {
         kills++;
+        cout << YELLOW <<"\t" << getName() << ", you get " << target->getXpReward() << "XP" << RESET << endl;
+        gainExperience(target->getXpReward());
+        
     }
     
 }
@@ -115,11 +109,22 @@ void Player::levelUp() {
 }
 
 void Player::gainExperience(int exp) {
-    experience += exp;
-    if (experience >= 100) {
+    const int maxExperience = 100;
+
+    if (exp > (maxExperience - experience)) {
+
+        int remainingExp = exp - (maxExperience - experience);
+        levelUp();
+        experience = remainingExp;
+    }
+    else {
+        experience += exp;
+    }
+    if (experience >= maxExperience) {
         levelUp();
         experience = 0;
     }
+
 }
 
 Character *Player::getTarget(vector<Enemy *> enemies) {
@@ -128,7 +133,7 @@ Character *Player::getTarget(vector<Enemy *> enemies) {
     do
     {
         for (int i = 0; i < enemies.size(); i++) {
-            cout << i << ". " << enemies[i]->getName() << "\t" << enemies[i]->getLifeBar() << endl;
+            cout << i << ". " << enemies[i]->getName() << "\t" << enemies[i]->getLifeBar()<< "\t\tExp Reward: "<< enemies[i]->getXpReward() << endl;
         }
         cin >> targetIndex;
 

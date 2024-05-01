@@ -4,15 +4,7 @@
 #include "Enemy.h"
 #include <iostream>
 #include <string>
-
-#define RESET   "\033[0m"
-#define RED     "\033[31m"      /* Red */
-#define GREEN   "\033[32m"      /* Green */
-#define YELLOW  "\033[33m"      /* Yellow */
-#define CYAN    "\033[36m"      /* Cyan */
-#define MAGENTA "\033[35m"
-#define ROSA "\033[38;5;206m"
-
+#include "../colors.h"
 
 using namespace std;
 
@@ -22,7 +14,8 @@ int getRolledAttack(int attack) {
     return (rand() % (attack - lowerLimit)) + lowerLimit;
 }
 
-Enemy::Enemy(char name[], int health, int attack, int defense, int speed) : Character(name, health, attack, defense, speed, false) {
+Enemy::Enemy(char name[], int health, int attack, int defense, int speed, int XpReward)
+    : Character(name, health, attack, defense, speed, XpReward, false) {
     maxHealth = health;
 }
 
@@ -86,3 +79,4 @@ Action Enemy::takeAction(vector<Player*> player) {
 
     return myAction;
 }
+
