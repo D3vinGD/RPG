@@ -1,6 +1,6 @@
-^C:\USERS\USER\DESKTOP\DIRECTORIOS_GIT\2DOSEMESTRE\RPG2.0\RPG\BUILD\CMAKEFILES\3624624AF5B9595A0678168E03C048CD\GENERATE.STAMP.RULE
+^C:\USERS\DEVIN\DESKTOP\DEVIN\POO\PROYECTO_SEMESTRE\RPG\BUILD\CMAKEFILES\CD79A2BAFCE5DDFE9AE7BBC0EA84078E\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG -BC:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG/build/rpg.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG -BC:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/rpg.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -121,6 +121,12 @@ void Combat::checkParticipantStatus(Character* participant) {
         else {
             enemies.erase(remove(enemies.begin(), enemies.end(), participant), enemies.end());
             
+            for (int i = 0; i < enemies.size(); i++)
+            {
+                if (enemies[i] != participant) {
+                    enemies[i]->gainExperience(participant->getXpReward(),enemies.size()); //!!!! que no suba de nivel si no que gane experiencia
+                }
+            }
         }
         participants.erase(remove(participants.begin(), participants.end(), participant), participants.end());
     }

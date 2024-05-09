@@ -20,6 +20,8 @@ public:
     Action takeAction(vector<Player*> player);
 
     int getMaxHealth();
+    void levelUp() override;
+    void gainExperience(int,int);
 
 };
 

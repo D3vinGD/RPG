@@ -43,6 +43,7 @@ void Player::doAttack(Character *target) {
         kills++;
         cout << YELLOW <<"\t" << getName() << ", you get " << target->getXpReward() << "XP" << RESET << endl;
         gainExperience(target->getXpReward());
+        target->setExperience(0);
         
     }
     
@@ -85,26 +86,29 @@ void Player::emote(vector<Enemy*> enemies) {
 
     for (int i = 0; i < enemies.size(); i++)
     {
-        enemies[i]->setDefense(enemies[i]->getDefense() - 2 );
+        enemies[i]->setDefense(enemies[i]->getDefense() - 1 );
     }
     cout << MAGENTA << "\t(*) All enemies defense has been diminished" << RESET << endl;
 
     kills = 0;
 }
 
-void Player::levelUp() {
+void Player::levelUp(){
     level++;
     setHealth(getHealth() + 10);
     setAttack(getAttack() + 2);
     setDefense(getDefense() + 1);
     setSpeed(getSpeed() + 3);
+    
+    cout << YELLOW << "\t(^)" << getName() << ", your level has gone up to "<< level << RESET << endl;
 
-    if ((health >= maxHealth * 0.30)&&(warning == true)) {
+    
+
+    if ((health >= maxHealth * 0.20
+        ) && (warning == true)) {
         cout << ORANGE << "\t(!)" << getName() << ", nevermind you level up" << RESET << endl;
         warning = false;
     }
-
-    cout << YELLOW << "\t(^)" << getName() << ", your level has gone up to "<< level << RESET << endl;
     
 }
 
@@ -133,8 +137,9 @@ Character *Player::getTarget(vector<Enemy *> enemies) {
     do
     {
         for (int i = 0; i < enemies.size(); i++) {
-            cout << i << ". " << enemies[i]->getName() << "\t" << enemies[i]->getLifeBar()<< "\t\tExp Reward: "<< enemies[i]->getXpReward() << endl;
+            cout << i << ". " << enemies[i]->getName() << " [Lvl:" << enemies[i]->getLevel() << "] \t " << enemies[i]->getLifeBar() << endl;
         }
+
         cin >> targetIndex;
 
     } while (  !(targetIndex >= 0 && targetIndex < enemies.size()) );
@@ -152,7 +157,7 @@ Action Player::takeAction(vector<Enemy *> enemies) {
     myAction.subscriber = this;
 
     while (actionTaked == false) {
-        cout << "\n==<>==<>==<>==[ " << getName() << ", choose an action ]==<>==<>==<>==" << endl;
+        cout << "\n==<[Lv: "<<getLevel()<<"]>==<>==<>==[ " << getName() << ", choose an action ]==<>==<>==<[XP: "<< getExperience()<<" ]>==" << endl;
         cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
     
         if (getKills() <= 0)

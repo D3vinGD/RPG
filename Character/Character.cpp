@@ -16,6 +16,23 @@ Character::Character(char _name[], int _health, int _attack, int _defense, int _
     fleed = false;
     kills = 0;
     XpReward = _XpReward;
+
+    level = 1;
+    experience = 0;
+}
+
+int Character::getExperience() {
+    return experience;
+}
+void Character::setExperience(int newExperience) {
+    experience = newExperience;
+}
+
+int Character::getLevel() {
+    return level;
+}
+void Character::setLevel(int _level) {
+    experience = _level;
 }
 
 void Character::setName(char _name[]) {
@@ -76,6 +93,9 @@ bool Character::hasFleed() {
 
 int Character::getMaxHealth() {
     return maxHealth;
+}
+void Character::setMaxHealth(int _maxHealth) {
+    maxHealth = _maxHealth;
 }
 
 string Character::getLifeBar() {

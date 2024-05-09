@@ -80,3 +80,39 @@ Action Enemy::takeAction(vector<Player*> player) {
     return myAction;
 }
 
+void Enemy::levelUp() {
+    level++;
+
+    if ((getHealth() + 5) > getMaxHealth()) {
+        setMaxHealth(getHealth() + 5);
+    }
+    setHealth(getHealth() + 5);
+
+    setAttack(getAttack() + 2);
+    setDefense(getDefense() + 1);
+    setSpeed(getSpeed() + 1);
+
+    cout << ORANGE<< "\t" << getName() << " (Level Up to: " << getLevel() << ") " << RESET << endl;
+    
+}
+void Enemy::gainExperience(int exp,int enemies_size) {
+
+    exp = (exp / 1.5) / enemies_size;//regula para que no suban a la par con el jugador
+
+    const int maxExperience = 100;
+
+    if (exp > (maxExperience - experience)) {
+
+        int remainingExp = exp - (maxExperience - experience);
+        levelUp();
+        experience = remainingExp;
+    }
+    else {
+        experience += exp;
+    }
+    if (experience >= maxExperience) {
+        levelUp();
+        experience = 0;
+    }
+}
+

@@ -20,6 +20,9 @@ protected:
     bool fleed;
     int kills;
 
+    int experience;
+    int level;
+
     int maxHealth;
 
     int XpReward;
@@ -31,6 +34,7 @@ public:
     virtual void takeDamage(int damage) = 0;
 
     int getMaxHealth();
+    void setMaxHealth(int);
 
     void setName(char[]);
     char* getName();
@@ -51,6 +55,13 @@ public:
 
     int getXpReward();
     void setXpReward(int);
+
+    int getExperience();
+    void setExperience(int);
+    int getLevel();
+    void setLevel(int);
+    
+    virtual void levelUp() = 0;
 };
 
 

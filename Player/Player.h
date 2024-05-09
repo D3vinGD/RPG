@@ -15,8 +15,6 @@ class Enemy;
 
 class Player: public Character {
 protected:
-    int experience;
-    int level;
     bool warning;
 public:
     Player(char _name[], int _health, int _attack, int _defense, int _speed);
@@ -27,9 +25,8 @@ public:
 
     void flee(vector<Enemy*> enemies);
     void emote(vector<Enemy*> enemies);
-    void levelUp();
+    void levelUp() override;
     void gainExperience(int);
-
 
     //Podemos hacer que este vector sea polimorfico?
     Action takeAction(vector<Enemy*> enemies);
