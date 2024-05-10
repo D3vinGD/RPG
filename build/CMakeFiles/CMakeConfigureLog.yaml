@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.5+33de0b227 for .NET Framework
-      Build started 08/05/2024 09:12:26 p. m..
+      Build started 09/05/2024 08:17:30 p. m..
       
       Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:03.49
+      Time Elapsed 00:00:02.34
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.5+33de0b227 for .NET Framework
-      Build started 08/05/2024 09:12:31 p. m..
+      Build started 09/05/2024 08:17:33 p. m..
       
       Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.79
+      Time Elapsed 00:00:02.11
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-ftfzhd"
-      binary: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-ftfzhd"
+      source: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-j5tck3"
+      binary: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-j5tck3"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-ftfzhd'
+        Change Dir: 'C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-j5tck3'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_79fa7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f1a01.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.5+33de0b227 for .NET Framework
-        Build started 08/05/2024 09:12:35 p. m..
+        Build started 09/05/2024 08:17:37 p. m..
         
-        Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ftfzhd\\cmTC_79fa7.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j5tck3\\cmTC_f1a01.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_79fa7.dir\\Debug\\".
+          Creating directory "cmTC_f1a01.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ftfzhd\\Debug\\".
-          Creating directory "cmTC_79fa7.dir\\Debug\\cmTC_79fa7.tlog\\".
+          Creating directory "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j5tck3\\Debug\\".
+          Creating directory "cmTC_f1a01.dir\\Debug\\cmTC_f1a01.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_79fa7.dir\\Debug\\cmTC_79fa7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_79fa7.dir\\Debug\\cmTC_79fa7.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f1a01.dir\\Debug\\cmTC_f1a01.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f1a01.dir\\Debug\\cmTC_f1a01.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79fa7.dir\\Debug\\\\" /Fd"cmTC_79fa7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1a01.dir\\Debug\\\\" /Fd"cmTC_f1a01.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33519 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79fa7.dir\\Debug\\\\" /Fd"cmTC_79fa7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1a01.dir\\Debug\\\\" /Fd"cmTC_f1a01.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ftfzhd\\Debug\\cmTC_79fa7.exe" /INCREMENTAL /ILK:"cmTC_79fa7.dir\\Debug\\cmTC_79fa7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-ftfzhd/Debug/cmTC_79fa7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-ftfzhd/Debug/cmTC_79fa7.lib" /MACHINE:X64  /machine:x64 cmTC_79fa7.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_79fa7.vcxproj -> C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ftfzhd\\Debug\\cmTC_79fa7.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j5tck3\\Debug\\cmTC_f1a01.exe" /INCREMENTAL /ILK:"cmTC_f1a01.dir\\Debug\\cmTC_f1a01.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-j5tck3/Debug/cmTC_f1a01.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-j5tck3/Debug/cmTC_f1a01.lib" /MACHINE:X64  /machine:x64 cmTC_f1a01.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f1a01.vcxproj -> C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j5tck3\\Debug\\cmTC_f1a01.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_79fa7.dir\\Debug\\cmTC_79fa7.tlog\\unsuccessfulbuild".
-          Touching "cmTC_79fa7.dir\\Debug\\cmTC_79fa7.tlog\\cmTC_79fa7.lastbuildstate".
-        Done Building Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ftfzhd\\cmTC_79fa7.vcxproj" (default targets).
+          Deleting file "cmTC_f1a01.dir\\Debug\\cmTC_f1a01.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f1a01.dir\\Debug\\cmTC_f1a01.tlog\\cmTC_f1a01.lastbuildstate".
+        Done Building Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j5tck3\\cmTC_f1a01.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.81
+        Time Elapsed 00:00:02.68
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-v7j51t"
-      binary: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-v7j51t"
+      source: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-46oq4z"
+      binary: "C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-46oq4z"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-v7j51t'
+        Change Dir: 'C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-46oq4z'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_010d9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4fbd1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.5+33de0b227 for .NET Framework
-        Build started 08/05/2024 09:12:39 p. m..
+        Build started 09/05/2024 08:17:41 p. m..
         
-        Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v7j51t\\cmTC_010d9.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46oq4z\\cmTC_4fbd1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_010d9.dir\\Debug\\".
+          Creating directory "cmTC_4fbd1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v7j51t\\Debug\\".
-          Creating directory "cmTC_010d9.dir\\Debug\\cmTC_010d9.tlog\\".
+          Creating directory "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46oq4z\\Debug\\".
+          Creating directory "cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_010d9.dir\\Debug\\cmTC_010d9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_010d9.dir\\Debug\\cmTC_010d9.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_010d9.dir\\Debug\\\\" /Fd"cmTC_010d9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4fbd1.dir\\Debug\\\\" /Fd"cmTC_4fbd1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33519 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_010d9.dir\\Debug\\\\" /Fd"cmTC_010d9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4fbd1.dir\\Debug\\\\" /Fd"cmTC_4fbd1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v7j51t\\Debug\\cmTC_010d9.exe" /INCREMENTAL /ILK:"cmTC_010d9.dir\\Debug\\cmTC_010d9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-v7j51t/Debug/cmTC_010d9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-v7j51t/Debug/cmTC_010d9.lib" /MACHINE:X64  /machine:x64 cmTC_010d9.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_010d9.vcxproj -> C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v7j51t\\Debug\\cmTC_010d9.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46oq4z\\Debug\\cmTC_4fbd1.exe" /INCREMENTAL /ILK:"cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-46oq4z/Debug/cmTC_4fbd1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/CMakeScratch/TryCompile-46oq4z/Debug/cmTC_4fbd1.lib" /MACHINE:X64  /machine:x64 cmTC_4fbd1.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4fbd1.vcxproj -> C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46oq4z\\Debug\\cmTC_4fbd1.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_010d9.dir\\Debug\\cmTC_010d9.tlog\\unsuccessfulbuild".
-          Touching "cmTC_010d9.dir\\Debug\\cmTC_010d9.tlog\\cmTC_010d9.lastbuildstate".
-        Done Building Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v7j51t\\cmTC_010d9.vcxproj" (default targets).
+          Deleting file "cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4fbd1.dir\\Debug\\cmTC_4fbd1.tlog\\cmTC_4fbd1.lastbuildstate".
+        Done Building Project "C:\\Users\\devin\\Desktop\\Devin\\POO\\Proyecto_semestre\\RPG\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46oq4z\\cmTC_4fbd1.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.93
+        Time Elapsed 00:00:03.17
         
       exitCode: 0
   -

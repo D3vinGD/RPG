@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 
-Character::Character(char _name[], int _health, int _attack, int _defense, int _speed,int _XpReward, bool _isPlayer) {
+Character::Character(char _name[], int _health, int _attack, int _defense, int _speed,int _XpReward,int _level, bool _isPlayer) {
     strcpy(name, _name);
     health = _health;
     maxHealth = _health;
@@ -16,9 +16,9 @@ Character::Character(char _name[], int _health, int _attack, int _defense, int _
     fleed = false;
     kills = 0;
     XpReward = _XpReward;
-
-    level = 1;
+    level = _level;
     experience = 0;
+
 }
 
 int Character::getExperience() {

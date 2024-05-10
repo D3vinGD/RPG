@@ -13,10 +13,10 @@ int main() {
 
     //{ENEMIGOS} Nombre, vida , ataque, defensa, velocidad, xp de recompensa
 
-    Enemy *enemy = new Enemy("El Padrastro", 35, 32, 5, 10, 60);
-    Enemy *enemy2 = new Enemy("Pug", 1, 19, 0, 14, 62);
-    Enemy* enemy3 = new Enemy("YucatecoTactico", 50, 20, 10, 12, 80);
-    Enemy* enemy4 = new Enemy("Peruano", 100, 16, 1, 9, 41);
+    Enemy *enemy = new Enemy("El Padrastro", 35, 32, 5, 10, 60,2);
+    Enemy *enemy2 = new Enemy("Pug", 1, 19, 0, 14, 62,1);
+    Enemy* enemy3 = new Enemy("YucatecoTactico", 50, 20, 10, 12, 80,3);
+    Enemy* enemy4 = new Enemy("Peruano", 100, 16, 1, 9, 41,1);
 
 
     vector<Character*> participants;

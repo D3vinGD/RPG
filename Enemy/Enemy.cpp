@@ -14,9 +14,16 @@ int getRolledAttack(int attack) {
     return (rand() % (attack - lowerLimit)) + lowerLimit;
 }
 
-Enemy::Enemy(char name[], int health, int attack, int defense, int speed, int XpReward)
-    : Character(name, health, attack, defense, speed, XpReward, false) {
-    maxHealth = health;
+Enemy::Enemy(char name[], int health, int attack, int defense, int speed, int XpReward, int level)
+    : Character(name, health, attack, defense, speed, XpReward, level, false) {
+    if (this->level > 1)
+    {
+        this->health += (5 * level);
+        this->attack += (2 * level);
+        this->defense += (1 * level);
+        this->speed += (1 * level);
+    }
+    this->maxHealth = this->health;
 }
 
 void Enemy::doAttack(Character* target) {

@@ -15,7 +15,7 @@ bool compareSpeed(Enemy *a, Enemy *b) {
 }
 
 Player::Player(char name[], int health, int attack, int defense, int speed) : Character(name, health, attack, defense,
-                                                                                        speed, XpReward, true) {
+                                                                                        speed, XpReward,level, true) {
     experience = 0;
     level = 1;
     maxHealth = health;

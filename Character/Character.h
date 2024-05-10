@@ -28,7 +28,7 @@ protected:
     int XpReward;
 
 public:
-    Character(char[], int, int, int, int, int , bool);
+    Character(char[], int, int, int, int, int,int , bool);
 
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
