@@ -20,9 +20,15 @@ Enemy::Enemy(char name[], int health, int attack, int defense, int speed, int Xp
 }
 
 void Enemy::doAttack(Character* target) {
-    int rolledAttack = getRolledAttack(getAttack());
-    int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
-    target->takeDamage(trueDamage);
+    if (target->getHealth() > 0) {
+        int rolledAttack = getRolledAttack(getAttack());
+        int trueDamage = target->getDefense() > rolledAttack ? 0 : rolledAttack - target->getDefense();
+        target->takeDamage(trueDamage);
+    }
+    else {
+        cout << MAGENTA <<"\t" << getName() << " le baila a " << target->getName() << RESET << endl;
+    }
+    
 }
 
 
@@ -97,7 +103,7 @@ void Enemy::levelUp() {
 }
 void Enemy::gainExperience(int exp,int enemies_size) {
 
-    exp = (exp / 1.5) / enemies_size;//regula para que no suban a la par con el jugador
+    exp /= enemies_size;//regula para que no suban a la par con el jugador
 
     const int maxExperience = 100;
 
