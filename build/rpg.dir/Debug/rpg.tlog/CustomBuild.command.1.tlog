@@ -1,6 +1,6 @@
-^C:\USERS\DEVIN\DESKTOP\DEVIN\POO\PROYECTO_SEMESTRE\RPG\CMAKELISTS.TXT
+^C:\USERS\USER\DESKTOP\DIRECTORIOS_GIT\2DOSEMESTRE\RPG2.0\RPG\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG -BC:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build --check-stamp-file C:/Users/devin/Desktop/Devin/POO/Proyecto_semestre/RPG/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG -BC:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG/build --check-stamp-file C:/Users/User/Desktop/Directorios_git/2doSemestre/RPG2.0/RPG/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

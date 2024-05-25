@@ -6,6 +6,7 @@
 #include "../Utils.h"
 #include <algorithm>
 #include "..\colors.h"
+#include "../Item/Item.h"
 
 using namespace std;
 using namespace combat_utils;
@@ -20,7 +21,11 @@ Player::Player(char name[], int health, int attack, int defense, int speed) : Ch
     level = 1;
     maxHealth = health;
     warning = false;
+    //ataque, vida , defensa, velocidad, experiencia
+    Items.push_back(make_unique<Item>("pomada de la campana", 0, 35, 0, 0, 0));
+    Items.push_back(make_unique<Item>("pancreas de vagabundo", 5, -10, 0, 0, 0));
 }
+
 
 void Player::doAttack(Character *target) {
     int rolledAttack = getRolledAttack(getAttack());
@@ -93,6 +98,7 @@ void Player::emote(vector<Enemy*> enemies) {
     kills = 0;
 }
 
+
 void Player::levelUp(){
     level++;
     setHealth(getHealth() + 10);
@@ -155,23 +161,25 @@ Action Player::takeAction(vector<Enemy *> enemies) {
 
     myAction.speed = this->getSpeed();
     myAction.subscriber = this;
-
+    // cambiar inerface
     while (actionTaked == false) {
         cout << "\n==<[Lv: "<<getLevel()<<"]>==<>==<>==[ " << getName() << ", choose an action ]==<>==<>==<[XP: "<< getExperience()<<" ]>==" << endl;
-        cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tVel: "<<getSpeed()<< endl;
+        cout << "\t Life: " << getLifeBar() << "\n\t\tAtk: "<<getAttack()<< "\tDef: "<<getDefense()<< "\tSp: "<<getSpeed()<< endl;
     
-        if (getKills() <= 0)
-        {
+        
             cout << RED << "\n\t1. Attack\t" << RESET;
-            cout << CYAN << "2. Flee\t" << RESET << endl;
-        }
-        else
-        {
-            cout << RED << "\n\t1. Attack\t" << RESET;
-            cout << CYAN << "2. Flee\t" << RESET;
-            cout << MAGENTA << "\t3. Emote" << RESET << endl;
-        }
-       
+            cout << GREEN << "2. Item\t" << RESET;
+            if (getKills() > 0)
+            {
+                cout << MAGENTA << "\t3. Emote\t" << RESET;
+            }
+            else
+            {
+                cout << GRAY << "\t3. Emote\t" << RESET;
+            }
+            
+            cout << CYAN << "4. Flee" << RESET << endl;
+
 
             cin >> option;
         switch (option) {
@@ -185,10 +193,24 @@ Action Player::takeAction(vector<Enemy *> enemies) {
                 actionTaked = true;
             break;
         case 2:
-            myAction.action = [this, enemies]() {
-                flee(enemies);
-            };
-            actionTaked = true;
+            int itemSelected;
+            showItems(Items);  // Mostrar los elementos
+            do {
+                std::cin >> itemSelected;
+                itemSelected -= 1;
+            } while (itemSelected < 0 || itemSelected > Items.size());  // Validar el rango
+
+            if (itemSelected == Items.size()) {
+                system("cls");
+            }
+            else if (itemSelected >= 0 && itemSelected < Items.size()) {
+                // Capturar itemSelected y usar el ítem, luego eliminar el ítem
+                myAction.action = [this, itemSelected]() {
+                    Items[itemSelected]->Use(this);
+                    Items.erase(Items.begin() + itemSelected);
+                };
+                actionTaked = true;
+            }
             break;
         case 3:
             if (kills > 0) {
@@ -199,7 +221,14 @@ Action Player::takeAction(vector<Enemy *> enemies) {
             }
             else {
                 system("cls");
+                cout << GRAY << "\t(i) You need to kill one enemy to emote.."<< RESET << endl;
             }
+            break;
+        case 4:
+            myAction.action = [this, enemies]() {
+                flee(enemies);
+            };
+            actionTaked = true;
             break;
         default:
             system("cls");
@@ -208,4 +237,13 @@ Action Player::takeAction(vector<Enemy *> enemies) {
     }
 
     return myAction;
+}
+
+void Player::showItems(const vector<unique_ptr<Item>>& items) {
+    cout << GOLDEN_YELLOW << "\t-----items list-----" << RESET << endl;
+    for (int i = 0; i < items.size(); i++) {
+        cout << GOLDEN_YELLOW << "\t" << i + 1 << " - " << items[i]->getName() << RESET << endl;
+    }
+    cout << GOLDEN_YELLOW << "\t" << items.size() + 1 << " - Go Back" << RESET << endl;
+    
 }

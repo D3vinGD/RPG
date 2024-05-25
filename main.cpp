@@ -2,6 +2,7 @@
 #include "Enemy/Enemy.h"
 #include "Player/Player.h"
 #include "Combat/Combat.h"
+#include "Item/Item.h"
 #include <queue>
 
 using namespace std;
@@ -9,7 +10,7 @@ using namespace std;
 int main() { 
 
     //{JUGADORES} Nombre, vida , ataque, defensa, velocidad
-    Player *player = new Player("Devin", 100, 30, 15, 15);
+    Player *player = new Player("Devin", 100, 30, 20, 15);
 
     //{ENEMIGOS} Nombre, vida , ataque, defensa, velocidad, xp de recompensa
 

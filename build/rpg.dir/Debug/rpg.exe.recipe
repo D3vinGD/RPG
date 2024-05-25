@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\build\Debug\rpg.exe</FullPath>
+      <FullPath>C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\build\Debug\rpg.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

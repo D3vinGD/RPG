@@ -7,17 +7,10 @@
   },
   "ExpandedNodes": [
     "",
-    "\\build",
-    "\\build\\CMakeFiles",
-    "\\build\\CMakeFiles\\3.29.3",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdC",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX\\Debug",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX\\Debug\\CompilerIdCXX.tlog",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdC\\Debug",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdC\\Debug\\CompilerIdC.tlog",
-    "\\build\\CMakeFiles\\3.29.3\\CompilerIdC\\tmp"
+    "\\Combat",
+    "\\Item",
+    "\\Player"
   ],
-  "SelectedNode": "\\build\\rpg.vcxproj",
+  "SelectedNode": "\\colors.h",
   "PreviewInSolutionExplorer": true
 }

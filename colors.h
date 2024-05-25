@@ -9,5 +9,7 @@
 #define MAGENTA "\033[35m"     /* Magenta */
 #define ROSA    "\033[38;5;206m"   /* Rosa */
 #define ORANGE  "\033[38;5;208m"   /* Naranja */
+#define GRAY    "\033[90m"      /* Gris */
+#define GOLDEN_YELLOW "\033[33;1m"   /* Amarillo dorado */
 
 #endif  // COLORS_H

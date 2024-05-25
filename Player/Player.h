@@ -8,14 +8,18 @@
 #include "../Character/Character.h"
 #include "../Enemy/Enemy.h"
 #include "../Combat/Action.h"
+#include "../Item/Item.h"
 
+#include <vector>
 
 struct Action;
 class Enemy;
+class Item;
 
 class Player: public Character {
 protected:
     bool warning;
+    vector<unique_ptr<Item>> Items;
 public:
     Player(char _name[], int _health, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
@@ -25,11 +29,12 @@ public:
 
     void flee(vector<Enemy*> enemies);
     void emote(vector<Enemy*> enemies);
+    void showItems(const vector<unique_ptr<Item>>& items);
     void levelUp() override;
     void gainExperience(int);
 
-    //Podemos hacer que este vector sea polimorfico?
     Action takeAction(vector<Enemy*> enemies);
+
 
 };
 
