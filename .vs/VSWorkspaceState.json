@@ -8,9 +8,9 @@
   "ExpandedNodes": [
     "",
     "\\Combat",
-    "\\Item",
+    "\\Game",
     "\\Player"
   ],
-  "SelectedNode": "\\colors.h",
+  "SelectedNode": "\\Combat\\Action.h",
   "PreviewInSolutionExplorer": true
 }

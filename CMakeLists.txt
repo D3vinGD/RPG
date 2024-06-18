@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29.0)
+cmake_minimum_required(VERSION 3.29.3)
 project(rpg)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -16,4 +16,4 @@ add_executable(rpg main.cpp
         colors.h
         Combat/Action.h
         Item/Item.cpp
-        Item/Item.h)
+        Item/Item.h "Game/Game.cpp" "Game/Game.hpp")

@@ -1,8 +1,13 @@
 #include <iostream>
+#include <vector>
+#include <memory>
+
 #include "Enemy/Enemy.h"
 #include "Player/Player.h"
 #include "Combat/Combat.h"
 #include "Item/Item.h"
+
+#include "Game/Game.h"
 #include <queue>
 
 using namespace std;
@@ -10,14 +15,13 @@ using namespace std;
 int main() { 
 
     //{JUGADORES} Nombre, vida , ataque, defensa, velocidad
-    Player *player = new Player("Devin", 100, 30, 20, 15);
+    Player* player = new Player("Devin", 100 , 30, 20, 15);
 
     //{ENEMIGOS} Nombre, vida , ataque, defensa, velocidad, xp de recompensa
 
     Enemy *enemy = new Enemy("El Padrastro", 35, 32, 5, 10, 60,2);
     Enemy *enemy2 = new Enemy("Pug", 1, 19, 0, 14, 62,1);
     Enemy* enemy3 = new Enemy("YucatecoTactico", 50, 20, 10, 12, 80,3);
-    Enemy* enemy4 = new Enemy("Peruano", 100, 16, 1, 9, 41,1);
 
 
     vector<Character*> participants;
@@ -25,7 +29,6 @@ int main() {
     participants.push_back(enemy);
     participants.push_back(enemy2);
     participants.push_back(enemy3);
-    participants.push_back(enemy4);
 
     Combat* combat = new Combat(participants);
     combat->doCombat();
@@ -34,7 +37,6 @@ int main() {
     delete enemy;
     delete enemy2;
     delete enemy3;
-    delete enemy4;
     delete combat;
     return 0;
 }

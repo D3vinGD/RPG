@@ -1,60 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\main.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Character\Character.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Character\Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Player\Player.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Player\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Enemy\Enemy.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Enemy\Enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Combat.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Combat\Combat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Item\Item.cpp">
+    <ClCompile Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Item\Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Character\Character.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Character\Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Player\Player.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Player\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Enemy\Enemy.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Enemy\Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Combat.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Combat\Combat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Utils.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\colors.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\colors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Combat\Action.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Combat\Action.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\Item\Item.h">
+    <ClInclude Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\Item\Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\User\Desktop\Directorios_git\2doSemestre\RPG2.0\RPG\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\devin\Desktop\Devin\POO\Proyecto_semestre\RPG\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{986A0E57-E7A0-3FE3-8924-AD0F439A61FB}</UniqueIdentifier>
+      <UniqueIdentifier>{9EE2EC90-6A99-33FC-9AEA-D186B60AF0C6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3C202EC4-8DE3-32FF-859E-0D385B354ADD}</UniqueIdentifier>
+      <UniqueIdentifier>{418E15E6-A185-39F9-AEA3-AB4994F7EBE5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
