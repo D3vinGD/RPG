@@ -7,10 +7,8 @@
   },
   "ExpandedNodes": [
     "",
-    "\\Combat",
-    "\\Game",
-    "\\Player"
+    "\\Game"
   ],
-  "SelectedNode": "\\Combat\\Action.h",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": true
 }
